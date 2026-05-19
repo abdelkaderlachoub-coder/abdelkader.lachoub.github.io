@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Abdelkader LACHOUB</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d0d0d;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      background: #111;
+      border-bottom: 1px solid #333;
+      padding: 12px 24px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    nav .logo {
+      font-weight: bold;
+      color: #00ff41;
+      font-size: 16px;
+      margin-right: auto;
+    }
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover { color: #00ff41; }
+
+    /* SECTIONS */
+    section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      border-bottom: 1px solid #222;
+    }
+
+    h1 { font-size: 28px; color: #00ff41; margin-bottom: 8px; }
+    h2 { font-size: 20px; color: #00ff41; margin-bottom: 20px; padding-bottom: 6px; border-bottom: 1px solid #333; }
+    h3 { font-size: 16px; color: #ccc; margin-bottom: 6px; }
+
+    p { margin-bottom: 10px; color: #bbb; }
+
+    /* HERO */
+    #accueil { text-align: center; padding-top: 64px; }
+    #accueil .subtitle { color: #888; font-size: 15px; margin-top: 8px; }
+    #accueil .badge {
+      display: inline-block;
+      background: #1a2e1a;
+      color: #00ff41;
+      border: 1px solid #00ff41;
+      padding: 4px 14px;
+      font-size: 13px;
+      margin-top: 16px;
+      border-radius: 3px;
+    }
+
+    /* BLOCS */
+    .bloc {
+      background: #161616;
+      border: 1px solid #2a2a2a;
+      padding: 20px;
+      margin-bottom: 16px;
+      border-radius: 4px;
+    }
+    .bloc h3 { color: #00ff41; }
+
+    /* TABLE COMPETENCES */
+    .comp-list { list-style: none; padding: 0; }
+    .comp-list li {
+      padding: 6px 0;
+      border-bottom: 1px solid #222;
+      color: #bbb;
+    }
+    .comp-list li:last-child { border-bottom: none; }
+    .comp-list .label { color: #888; font-size: 13px; }
+
+    /* TAGS */
+    .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      background: #1a2e1a;
+      color: #00ff41;
+      border: 1px solid #2a5a2a;
+      padding: 2px 10px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+
+    /* TIMELINE STAGES */
+    .stage {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #222;
+    }
+    .stage:last-child { border-bottom: none; }
+    .stage-date {
+      min-width: 90px;
+      color: #555;
+      font-size: 13px;
+      padding-top: 2px;
+    }
+    .stage h3 { color: #ddd; }
+    .stage .company { color: #00ff41; font-size: 13px; margin-bottom: 4px; }
+
+    /* VEILLE */
+    .veille-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .veille-card {
+      background: #161616;
+      border: 1px solid #2a2a2a;
+      padding: 16px;
+      border-radius: 4px;
+    }
+    .veille-card h3 { color: #00ff41; margin-bottom: 8px; font-size: 14px; }
+
+    .iframe-wrap {
+      border: 1px solid #333;
+      margin-top: 16px;
+      background: #111;
+    }
+    .iframe-wrap iframe { display: block; width: 100%; height: 440px; border: 0; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #444;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="logo">ABDELKADER LACHOUB</span>
+  <a href="#accueil">Accueil</a>
+  <a href="#profil">Profil</a>
+  <a href="#projets">Projets</a>
+  <a href="#stages">Stages</a>
+  <a href="#veille">Veille</a>
+</nav>
+
+<!-- 1. ACCUEIL -->
+<section id="accueil">
+  <h1>Abdelkader LACHOUB</h1>
+  <p class="subtitle">Lycée Jean Vilar — Plaisir</p>
+  <div class="badge">BTS SIO · Option SISR · 2025–2027</div>
+  <p style="margin-top:24px; color:#888;">Portfolio d'évaluation n°1 — 18/05/2026</p>
+</section>
+
+<!-- 2. PROFIL -->
+<section id="profil">
+  <h2>2. Profil</h2>
+
+  <!-- Présentation BTS SIO -->
+  <div class="bloc">
+    <h3>Présentation du BTS SIO</h3>
+    <p>Le BTS Services Informatiques aux Organisations (SIO) forme aux métiers de l'informatique. L'option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) prépare aux métiers de l'administration réseau, de la cybersécurité et des systèmes.</p>
+  </div>
+
+  <!-- Compétences / CV -->
+  <div class="bloc">
+    <h3>Compétences informatiques</h3>
+    <ul class="comp-list">
+      <li><strong>Pack Office</strong></li>
+      <li><strong>Cisco Packet Tracer</strong></li>
+      <li><strong>Python</strong></li>
+      <li><strong>Windows Server</strong> <span class="label">— Active Directory</span></li>
+      <li><strong>Linux</strong> <span class="label">— Debian</span></li>
+      <li><strong>Windows</strong></li>
+    </ul>
+  </div>
+
+  <div class="bloc">
+    <h3>Langues</h3>
+    <ul class="comp-list">
+      <li><strong>Anglais</strong> <span class="label">— B2</span></li>
+      <li><strong>Espagnol</strong> <span class="label">— A1</span></li>
+    </ul>
+  </div>
+
+  <div class="bloc">
+    <h3>Diplômes & Formations</h3>
+    <ul class="comp-list">
+      <li><strong>BTS SIO</strong> <span class="label">— Lycée Jean Vilar, Plaisir (depuis sept. 2025)</span></li>
+      <li><strong>CPGE option TSI</strong> <span class="label">— Lycée Henri Parriat, Montceau-les-Mines (août 2024 – juil. 2025)</span></li>
+      <li><strong>Diplôme Erasmus+</strong> <span class="label">— Louis Blériot, Trappes (déc. 2023)</span></li>
+      <li><strong>Bac Pro Systèmes Numériques</strong> <span class="label">— option RISC, Louis Blériot, Trappes — Mention assez bien (sept. 2021 – juin 2024)</span></li>
+      <li><strong>Brevet (DNB)</strong> <span class="label">— Collège de La Clef St Pierre, Élancourt (2021)</span></li>
+      <li><strong>PSC1</strong> <span class="label">— Certificat de Prévention et Secours Civiques Niveau 1 (2021)</span></li>
+    </ul>
+  </div>
+
+  <div class="bloc">
+    <h3>Centres d'intérêt</h3>
+    <ul class="comp-list">
+      <li><strong>Dessin</strong> <span class="label">— physique et numérique</span></li>
+      <li><strong>Sport</strong> <span class="label">— Karaté, Tennis de table (4 ans), Boxe anglaise, Volley, Randonnée</span></li>
+      <li><strong>Musique</strong> <span class="label">— Basse</span></li>
+      <li><strong>Voyages</strong> <span class="label">— Angleterre, Irlande, Espagne, Algérie, Corse</span></li>
+    </ul>
+  </div>
+
+  <!-- Certifications (facultatif) -->
+  <div class="bloc">
+    <h3>Certifications complémentaires <span style="color:#555; font-size:12px;">(facultatif)</span></h3>
+
+    <!-- Attestation SecNumacadémie -->
+    <div style="border: 1px solid #2a2a2a; padding: 16px; margin-top: 12px; border-radius: 4px; background: #111;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">
+        <div>
+          <div style="color:#00ff41; font-weight:bold; font-size:15px;">SecNumacadémie — ANSSI</div>
+          <div style="color:#888; font-size:13px; margin-top:2px;">MOOC Cybersécurité · Obtenu le 27/02/2026</div>
+        </div>
+        <a href="https://www.secnumacademie.gouv.fr" target="_blank" style="color:#00ff41; font-size:13px;">secnumacademie.gouv.fr ↗</a>
+      </div>
+
+      <table style="width:100%; margin-top:14px; border-collapse:collapse; font-size:14px;">
+        <thead>
+          <tr style="border-bottom: 1px solid #333;">
+            <th style="text-align:left; padding:6px 8px; color:#888; font-weight:normal;">Module</th>
+            <th style="text-align:center; padding:6px 8px; color:#888; font-weight:normal;">Date</th>
+            <th style="text-align:right; padding:6px 8px; color:#888; font-weight:normal;">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #1e1e1e;">
+            <td style="padding:8px;">Panorama de la SSI</td>
+            <td style="text-align:center; padding:8px; color:#888;">27/02/2026</td>
+            <td style="text-align:right; padding:8px; color:#00ff41; font-weight:bold;">92%</td>
+          </tr>
+          <tr style="border-bottom:1px solid #1e1e1e;">
+            <td style="padding:8px;">Sécurité de l'authentification</td>
+            <td style="text-align:center; padding:8px; color:#888;">27/02/2026</td>
+            <td style="text-align:right; padding:8px; color:#00ff41; font-weight:bold;">90%</td>
+          </tr>
+          <tr style="border-bottom:1px solid #1e1e1e;">
+            <td style="padding:8px;">Sécurité sur Internet</td>
+            <td style="text-align:center; padding:8px; color:#888;">27/02/2026</td>
+            <td style="text-align:right; padding:8px; color:#00ff41; font-weight:bold;">88%</td>
+          </tr>
+          <tr>
+            <td style="padding:8px;">Sécurité du poste de travail et nomadisme</td>
+            <td style="text-align:center; padding:8px; color:#888;">27/02/2026</td>
+            <td style="text-align:right; padding:8px; color:#00ff41; font-weight:bold;">96%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- iFrame FUN MOOC -->
+    <div style="margin-top: 16px;">
+      <div style="color:#888; font-size:13px; margin-bottom:6px;">Pearltrees — ressources FUN MOOC</div>
+      <iframe src="https://www.pearltrees.com/abdelkaderlachoub/fun-mooc/id103520825?embed=2&d=202605191512" width="100%" height="500" style="border:0; display:block;" allowtransparency="true"></iframe>
+      <span style="display:block; padding-top:6px; color:#555; font-size:13px;">
+        <a href="https://www.pearltrees.com/abdelkaderlachoub/fun-mooc/id103520825" style="color:#00ff41; font-size:13px;" target="_blank">FUN MOOC</a>, par <a href="https://www.pearltrees.com/abdelkaderlachoub" style="color:#00ff41; font-size:13px;" target="_blank">abdelkaderlachoub</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="bloc">
+    <h3>Informations de contact</h3>
+    <ul class="comp-list">
+      <li><strong>Email</strong> <span class="label">— <a href="mailto:abdelkaderlachoub@gmail.com" style="color:#00ff41;">abdelkaderlachoub@gmail.com</a></span></li>
+      <li><strong>Téléphone</strong> <span class="label">— 07 77 23 73 89</span></li>
+      <li><strong>Adresse</strong> <span class="label">— 12 Rue Fernand Léger, 78190 Trappes</span></li>
+      <li><strong>Né le</strong> <span class="label">— 03/10/2006</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. PROJETS -->
+<section id="projets">
+  <h2>3. Projets & Réalisations en formation</h2>
+
+  <!-- Projet 1 -->
+  <div class="bloc">
+    <h3>Projet 1 — [Titre du projet]</h3>
+    <p><strong>Période :</strong> à compléter &nbsp;|&nbsp; <strong>Objectifs :</strong> à compléter</p>
+    <p><strong>Organisation :</strong> à compléter</p>
+    <div class="tags">
+      <span class="tag">Technologie 1</span>
+      <span class="tag">Technologie 2</span>
+    </div>
+    <p style="margin-top:12px;"><strong>Réalisations :</strong> à compléter. Ajouter les liens vers les documents si disponibles.</p>
+  </div>
+
+  <!-- Projet 2 -->
+  <div class="bloc">
+    <h3>Projet 2 — [Titre du projet]</h3>
+    <p><strong>Période :</strong> à compléter &nbsp;|&nbsp; <strong>Objectifs :</strong> à compléter</p>
+    <p><strong>Organisation :</strong> à compléter</p>
+    <div class="tags">
+      <span class="tag">Technologie 1</span>
+      <span class="tag">Technologie 2</span>
+    </div>
+    <p style="margin-top:12px;"><strong>Réalisations :</strong> à compléter. Ajouter les liens vers les documents si disponibles.</p>
+  </div>
+
+  <!-- Tableau de synthèse E5 -->
+  <div class="bloc">
+    <h3>Tableau de synthèse E5</h3>
+    <p>À ajouter en format PDF. <a href="#" style="color:#00ff41;">Télécharger le tableau (.pdf)</a></p>
+  </div>
+</section>
+
+<!-- 4. STAGES -->
+<section id="stages">
+  <h2>4. Stages</h2>
+
+  <!-- Stage 1ère année -->
+  <h3 style="margin-bottom:14px; color:#888;">Stage de 1ère année</h3>
+
+  <div class="stage">
+    <div class="stage-date">25/05/2026<br>→ 03/07/2026</div>
+    <div>
+      <h3>Développement MicroSOC & IA</h3>
+      <div class="company">OPSKY — 157 rue Anatole France, 92300 Levallois-Perret</div>
+      <p><strong>Contexte :</strong> OPSKY développe des solutions innovantes en cybersécurité, notamment autour des centres opérationnels de sécurité (SOC). L'entreprise conçoit un MicroSOC, une solution modulaire visant à démocratiser les capacités de détection et de réponse aux incidents de sécurité. Le stagiaire est intégré au bureau d'étude externalisé, en collaboration avec des experts en cybersécurité et en développement.</p>
+      <p><strong>Missions confiées :</strong></p>
+      <ul style="margin: 6px 0 10px 20px; color:#bbb;">
+        <li>Contribution au développement de briques fonctionnelles du MicroSOC</li>
+        <li>Participation à l'intégration de composants d'intelligence artificielle (analyse de logs, détection d'anomalies simples, automatisation)</li>
+        <li>Aide à la mise en place et aux tests de fonctionnalités de détection d'événements de sécurité</li>
+        <li>Participation à l'intégration technique (scripts, APIs, outils existants)</li>
+        <li>Contribution à la documentation technique des développements réalisés</li>
+      </ul>
+      <p><strong>Réalisations :</strong> à compléter en fin de stage.</p>
+      <div class="tags">
+        <span class="tag">Cybersécurité</span>
+        <span class="tag">SOC</span>
+        <span class="tag">IA</span>
+        <span class="tag">Python</span>
+        <span class="tag">APIs</span>
+        <span class="tag">Scripts</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage 2ème année -->
+  <h3 style="margin-bottom:14px; color:#888;">Stage de 2ème année</h3>
+
+  <div class="stage">
+    <div class="stage-date">2026–2027</div>
+    <div>
+      <h3>Stage BTS SIO — 2ème année</h3>
+      <div class="company">Entreprise · à compléter</div>
+      <p><strong>Description entreprise et contexte :</strong> à compléter</p>
+      <p><strong>Missions confiées :</strong> à compléter</p>
+      <p><strong>Réalisations :</strong> à compléter</p>
+    </div>
+  </div>
+
+  <!-- Autres stages -->
+  <h3 style="margin-bottom:14px; color:#888;">Stages précédents</h3>
+
+  <div class="stage">
+    <div class="stage-date">Nov–Déc 2023</div>
+    <div>
+      <h3>Installation fibre optique</h3>
+      <div class="company">N'ASCOM — Guyancourt</div>
+      <p>Travaux d'installation électrique sur la voie publique, pose de fibre optique.</p>
+      <div class="tags"><span class="tag">Fibre optique</span><span class="tag">Réseaux</span></div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stage-date">Oct–Nov 2023</div>
+    <div>
+      <h3>Programmation voiture robotisée</h3>
+      <div class="company">Cyber Base — Trappes</div>
+      <p>Stage centré sur la programmation d'une voiture robotisée (Python, électronique embarquée).</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Robotique</span></div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stage-date">Fév–Avr 2023</div>
+    <div>
+      <h3>SAV Reconditionnement — Erasmus+</h3>
+      <div class="company">PxPlayers — Espagne</div>
+      <p>Reconditionnement de consoles portables dans le cadre du programme Erasmus+.</p>
+      <div class="tags"><span class="tag">Erasmus+</span><span class="tag">SAV</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. VEILLE TECHNOLOGIQUE -->
+<section id="veille">
+  <h2>5. Veille Technologique</h2>
+
+  <div class="veille-grid">
+    <div class="veille-card">
+      <h3>Définition</h3>
+      <p>La veille technologique consiste à surveiller en continu les évolutions techniques, innovations et tendances du secteur informatique.</p>
+    </div>
+    <div class="veille-card">
+      <h3>Outils & méthodes</h3>
+      <p>Google Alertes, newsletters spécialisées, Pearltrees, flux RSS, forums professionnels.</p>
+    </div>
+    <div class="veille-card">
+      <h3>Sources utilisées</h3>
+      <p>ANSSI, CERT-FR, SecurityWeek, The Hacker News — sources fiables mises à jour régulièrement.</p>
+    </div>
+  </div>
+
+  <div class="bloc">
+    <h3>Sujet choisi : Cybersécurité & Menaces informatiques</h3>
+    <p>Surveillance des vulnérabilités, nouvelles formes d'attaques (ransomware, phishing, zero-day) et bonnes pratiques de sécurité.</p>
+    <div class="tags">
+      <span class="tag">Pearltrees</span>
+      <span class="tag">Google Alertes</span>
+      <span class="tag">ANSSI</span>
+      <span class="tag">CERT-FR</span>
+      <span class="tag">Newsletters</span>
+    </div>
+
+    <!-- iFrame Pearltrees -->
+    <div class="iframe-wrap">
+      <iframe
+        src="https://www.pearltrees.com/abdelkaderlachoub/veille-technologique/id103520748?embed=2&d=202605191513"
+        width="100%" height="500"
+        style="border:0; display:block;"
+        allowtransparency="true">
+      </iframe>
+    </div>
+    <p style="margin-top:10px; font-size:13px; color:#555;">
+      Veille alimentée régulièrement —
+      <a href="https://www.pearltrees.com/abdelkaderlachoub/veille-technologique/id103520748" target="_blank" style="color:#00ff41;">Ouvrir dans Pearltrees</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  Abdelkader LACHOUB — Portfolio BTS SIO · SISR · Évaluation n°1 · 18/05/2026 · Lycée Jean Vilar, Plaisir
+</footer>
+
+</body>
+</html>
